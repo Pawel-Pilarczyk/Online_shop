@@ -2,17 +2,18 @@
 <template>
   <div id="app">
       <Menu></Menu>
-      <h1>3131231213123</h1>
+      <Baner></Baner>
   </div>
 </template>
 
 <script>
 
 import Menu from "./components/Menu";
+import Baner from './components/Baner';
 
 export default {
   name: 'App',
-  components:{ Menu },
+  components:{ Menu,Baner },
   data () {
     return {
     }

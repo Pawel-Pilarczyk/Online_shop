@@ -29,22 +29,20 @@ $color-primary: rgba(75, 75, 75, 0.719);
         }
 
         >li{
-            padding:25px;
             margin-top: 0;
             font-size: 2rem;
             text-align: right;
             list-style: none;
 
-
-            &:hover{
-                border-bottom: 2px solid rgb(51, 51, 51);
-            }
-
             >a{
                 color: black;
                 text-decoration: none;
+                color:white;
+                padding: 10px;
+            }
 
-
+            &:hover{
+                background-color: darken($color-primary,10%);
             }
         }
 
