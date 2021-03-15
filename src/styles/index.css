@@ -5,22 +5,22 @@
   flex-direction: column;
   justify-content: space-around;
   top: 0; }
-  #main-navigation > img {
-    width: 100px; }
   #main-navigation > ul {
+    height: 100vh;
     margin: 0;
     padding: 0;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: #757575;
     transition: transform 2s; }
+    #main-navigation > ul > img {
+      width: 150px;
+      height: 100px; }
     #main-navigation > ul > li {
       padding: 40px;
       margin-top: 0;
       font-size: 2rem;
-      height: 10vh;
       text-align: right;
       list-style: none;
       border-bottom: 1px solid grey; }
@@ -29,12 +29,6 @@
       #main-navigation > ul > li > a {
         color: black;
         text-decoration: none; }
-
-.menu-unactive {
-  transform: translate(100vh, 0); }
-
-.menu-active {
-  transform: translate(0, 0); }
 
 #burger {
   width: 50px;
@@ -50,17 +44,50 @@
     width: 80%;
     height: 5px;
     background-color: white;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: transform 1s, opacity 1s; }
 
-@media (min-width: 1000px) {
+.menu-unactive {
+  transform: translate(100vh, 0); }
+
+.menu-active {
+  transform: translate(0, 0); }
+
+.burger-active > div:first-child {
+  transform: rotate(-45deg) translate(-13px, 10px); }
+.burger-active > div:nth-child(2) {
+  opacity: 0; }
+.burger-active > div:last-child {
+  transform: rotate(45deg) translate(-13px, -10px); }
+
+@media screen and (min-width: 1000px) {
   #main-navigation {
-    flex-direction: row; }
+    height: 7vh;
+    width: 100vw;
+    flex-direction: row;
+    background-color: #757575; }
     #main-navigation > ul {
-      flex-direction: row; } }
+      flex-direction: row;
+      height: 100%;
+      width: 100vw; }
+      #main-navigation > ul > img {
+        width: 150px;
+        height: 100%; }
+      #main-navigation > ul > li {
+        padding: 0; }
+
+  #burger {
+    display: none; }
+
+  .menu-unactive {
+    transform: translate(0, 0); } }
 body {
   background-color: red; }
 
 * {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
 
 /*# sourceMappingURL=index.css.map */

@@ -9,14 +9,10 @@ $color-primary: rgb(117, 117, 117);
     top: 0;
 
 
-    >img{
-        width: 100px;
-    }
-
     >ul{
+        height: 100vh;
         margin: 0;
         padding: 0;
-        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -25,11 +21,15 @@ $color-primary: rgb(117, 117, 117);
 
         transition: transform 2s;
 
+        >img{
+            width: 150px;
+            height: 100px;
+        }
+
         >li{
             padding:40px;
             margin-top: 0;
             font-size: 2rem;
-            height: 10vh;
             text-align: right;
             list-style: none;
             border-bottom: 1px solid grey;
@@ -49,14 +49,6 @@ $color-primary: rgb(117, 117, 117);
     }
 }
 
-.menu-unactive{
-    transform: translate(100vh,0);
-}
-
-.menu-active{
-    transform: translate(0,0);
-}
-
 #burger{
     width: 50px;
     height: 50px;
@@ -68,25 +60,75 @@ $color-primary: rgb(117, 117, 117);
     top:20px;
     right: 20px;
 
+
     >div{
         width: 80%;
         height: 5px;
         background-color: white;
         margin: 0 auto;
+        transition: transform 1s, opacity 1s;
     }
 }
 
-@media (min-width:1000px){
+
+.menu-unactive{
+    transform: translate(100vh,0);
+}
+
+.menu-active{
+    transform: translate(0,0);
+}
+
+
+.burger-active{
+
+    >div:first-child{
+        transform: rotate(-45deg)
+                    translate(-13px, 10px);
+    }
+
+    >div:nth-child(2){
+        opacity: 0;
+    }
+
+    >div:last-child{
+        transform: rotate(45deg)
+                    translate(-13px, -10px);;
+    }
+}
+
+
+@media screen and (min-width:1000px){
 
     #main-navigation{
+        height: 7vh;
+        width: 100vw;
         flex-direction: row;
+        background-color: $color-primary;
+
         >ul{
             flex-direction: row;
+            height: 100%;
+            width: 100vw;
+
+            >img{
+                width: 150px;
+                height: 100%;
+            }
+
+            >li{
+                padding:0;
+            }
+
         }
     }
 
-    // #burger{
-    //     display: none;
-    // }
+    #burger{
+        display: none;
+    }
+
+    .menu-unactive{
+        transform: translate(0,0);
+    }
 
 }
