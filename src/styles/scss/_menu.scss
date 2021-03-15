@@ -1,4 +1,4 @@
-$color-primary: rgb(117, 117, 117);
+$color-primary: rgba(75, 75, 75, 0.719);
 
 #main-navigation{
     position: fixed;
@@ -7,6 +7,8 @@ $color-primary: rgb(117, 117, 117);
     flex-direction: column;
     justify-content: space-around;
     top: 0;
+
+    transition: transform 2s;
 
 
     >ul{
@@ -27,15 +29,15 @@ $color-primary: rgb(117, 117, 117);
         }
 
         >li{
-            padding:40px;
+            padding:25px;
             margin-top: 0;
             font-size: 2rem;
             text-align: right;
             list-style: none;
-            border-bottom: 1px solid grey;
+
 
             &:hover{
-                background-color: grey;
+                border-bottom: 2px solid rgb(51, 51, 51);
             }
 
             >a{
@@ -72,7 +74,7 @@ $color-primary: rgb(117, 117, 117);
 
 
 .menu-unactive{
-    transform: translate(100vh,0);
+    transform: translate(100vw,0);
 }
 
 .menu-active{
@@ -105,19 +107,28 @@ $color-primary: rgb(117, 117, 117);
         width: 100vw;
         flex-direction: row;
         background-color: $color-primary;
+        contain: strict;
+
 
         >ul{
             flex-direction: row;
-            height: 100%;
             width: 100vw;
+            height: 7vh;
+            overflow-y: hidden;
 
             >img{
-                width: 150px;
-                height: 100%;
+                height: 7vh;
+                padding-left: 5vw;
             }
 
             >li{
-                padding:0;
+                padding: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                font-size: 1.5rem;
             }
 
         }
