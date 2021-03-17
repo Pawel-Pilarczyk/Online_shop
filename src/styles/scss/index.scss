@@ -1,15 +1,14 @@
 @import 'menu';
 @import 'baner';
 
-body{
-    position: relative;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-*{
+body{
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
 }
 
 style,title{
