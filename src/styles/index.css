@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   top: 0;
+  left: 0;
   transition: transform 2s; }
   #main-navigation > ul {
     height: 100vh;
@@ -98,5 +99,8 @@ body {
   margin: 0;
   padding: 0;
   display: inline-block; }
+
+style, title {
+  display: none; }
 
 /*# sourceMappingURL=index.css.map */

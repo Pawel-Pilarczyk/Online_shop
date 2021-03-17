@@ -1,4 +1,5 @@
 @import 'menu';
+@import 'baner';
 
 body{
     position: relative;
@@ -9,4 +10,8 @@ body{
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+
+style,title{
+    display: none;
 }
