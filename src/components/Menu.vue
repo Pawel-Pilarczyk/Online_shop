@@ -1,6 +1,6 @@
 /* eslint-disable no-debugger, no-console */
 <template>
-    <nav id='main-navigation'>
+    <nav id='main-navigation' :class="menuActive ? 'menu-active-index' : 'menu-unactive-index'">
 
         <ul :class="menuActive ? 'menu-active' : 'menu-unactive'">
             <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="">

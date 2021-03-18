@@ -12,9 +12,8 @@
 
     </div>
 
-
-
 </template>
+
 <script>
 
 export default {
@@ -24,7 +23,7 @@ export default {
 
             counter:0,
 
-            banerWidth : document.querySelector('.carousel-slide').getBoundingClientRect().width,
+            banerWidth : 0,
 
         }
     },
@@ -37,7 +36,18 @@ export default {
             if(this.counter <= -1){
                 this.counter = 2;
             }
+        },
+        myEventHandler(e) {
+            this.banerWidth = document.querySelector('.carousel-slide').getBoundingClientRect().width;
         }
+    },
+    created() {
+        window.addEventListener("resize", this.myEventHandler);
+        document.addEventListener('DOMContentLoaded', this.myEventHandler);
+    },
+    destroyed() {
+        window.removeEventListener("resize", this.myEventHandler);
+        document.addEventListener('DOMContentLoaded', this.myEventHandler);
     },
 }
 

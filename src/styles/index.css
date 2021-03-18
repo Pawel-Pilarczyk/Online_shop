@@ -6,8 +6,7 @@
   justify-content: space-around;
   top: 0;
   left: 0;
-  transition: transform 2s;
-  z-index: 999; }
+  transition: transform 2s; }
   #main-navigation > ul {
     height: 100vh;
     margin: 0;
@@ -43,7 +42,8 @@
   justify-content: space-around;
   position: absolute;
   top: 20px;
-  right: 20px; }
+  right: 20px;
+  z-index: 999; }
   #burger > div {
     width: 80%;
     height: 5px;
@@ -56,6 +56,19 @@
 
 .menu-active {
   transform: translate(0, 0); }
+
+@keyframes fadingOut {
+  from {
+    z-index: 999; }
+  to {
+    z-index: 0; } }
+.menu-active-index {
+  z-index: 999; }
+
+.menu-unactive-index {
+  animation-name: fadingOut;
+  animation-duration: 1s;
+  z-index: 0; }
 
 .burger-active > div:first-child {
   transform: rotate(-45deg) translate(-13px, 10px); }
@@ -94,13 +107,13 @@
   .menu-unactive {
     transform: translate(0, 0); } }
 .carousel-container {
-  padding-top: 10vh;
-  width: 75%;
+  width: 60%;
   margin: auto;
   display: block;
   overflow: hidden;
   position: relative;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  margin-top: 10vh; }
   .carousel-container > button {
     position: absolute;
     width: 60px;
