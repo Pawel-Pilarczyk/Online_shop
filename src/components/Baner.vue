@@ -1,16 +1,14 @@
 <template>
 
     <div class="carousel-container">
-        <div class="carousel-slide" :style="{transform: 'translate(-' + banerWidth + 'px)' }">
-            <img src="../media/pics/baner3.jpg" id='lastClone' alt="">
+        <div class="carousel-slide" :style="{transform: 'translate(-' + banerWidth * counter + 'px)' }">
             <img src="../media/pics/baner1.jpg" alt="" >
             <img src="../media/pics/baner2.jpg" alt="">
             <img src="../media/pics/baner3.jpg" alt="">
-            <img src="../media/pics/baner1.jpg" id='firstClone' alt="">
         </div>
 
-        <button id='prevBtn'>Prev</button>
-        <button id='nextBtn' @click="incrementCounter">Next</button>
+        <button id='prevBtn' @click="decrementCounter"><</button>
+        <button id='nextBtn' @click="incrementCounter">></button>
 
     </div>
 
@@ -19,15 +17,12 @@
 </template>
 <script>
 
-
-//
-
 export default {
     name:'Baner',
     data() {
         return {
 
-            counter:1,
+            counter:0,
 
             banerWidth : document.querySelector('.carousel-slide').getBoundingClientRect().width,
 
@@ -35,10 +30,13 @@ export default {
     },
     methods:{
         incrementCounter(){
-            this.counter++
+            this.counter >= 2 ? this.counter = 0 : this.counter++;
         },
         decrementCounter(){
             this.counter--
+            if(this.counter <= -1){
+                this.counter = 2;
+            }
         }
     },
 }
