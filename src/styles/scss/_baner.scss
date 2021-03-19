@@ -50,3 +50,15 @@
     }
 
 }
+
+@media (max-width:1400px){
+    .carousel-container{
+        width: 75%;
+    }
+}
+
+@media (max-width:1024px){
+    .carousel-container{
+        width: 100%;
+    }
+}

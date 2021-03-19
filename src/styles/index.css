@@ -49,7 +49,7 @@
     height: 5px;
     background-color: white;
     margin: 0 auto;
-    transition: transform 1s, opacity 1s; }
+    transition: transform 2s, opacity 1s; }
 
 .menu-unactive {
   transform: translate(100vw, 0); }
@@ -67,7 +67,7 @@
 
 .menu-unactive-index {
   animation-name: fadingOut;
-  animation-duration: 1s;
+  animation-duration: 2s;
   z-index: 0; }
 
 .burger-active > div:first-child {
@@ -144,6 +144,12 @@
     background-size: cover;
     width: 100%; }
 
+@media (max-width: 1400px) {
+  .carousel-container {
+    width: 75%; } }
+@media (max-width: 1024px) {
+  .carousel-container {
+    width: 100%; } }
 * {
   margin: 0px;
   padding: 0px;

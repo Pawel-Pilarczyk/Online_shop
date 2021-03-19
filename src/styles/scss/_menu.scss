@@ -70,7 +70,7 @@ $color-primary: rgba(75, 75, 75, 0.719);
         height: 5px;
         background-color: white;
         margin: 0 auto;
-        transition: transform 1s, opacity 1s;
+        transition: transform 2s, opacity 1s;
     }
 }
 
@@ -94,7 +94,7 @@ $color-primary: rgba(75, 75, 75, 0.719);
 
 .menu-unactive-index{
     animation-name: fadingOut;
-    animation-duration: 1s;
+    animation-duration: 2s;
     z-index: 0;
 }
 

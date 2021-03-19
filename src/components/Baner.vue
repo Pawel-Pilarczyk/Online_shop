@@ -1,13 +1,13 @@
 <template>
 
     <div class="carousel-container">
-        <div class="carousel-slide" :style="{transform: 'translate(-' + banerWidth * counter + 'px)' }">
+        <div class="carousel-slide" :style="{transform: 'translate(-' + banerWidth * counter + 'px)'}">
             <img src="../media/pics/baner1.jpg" alt="" >
             <img src="../media/pics/baner2.jpg" alt="">
             <img src="../media/pics/baner3.jpg" alt="">
         </div>
 
-        <button id='prevBtn' @click="decrementCounter"><</button>
+        <button id='prevBtn' @click="decrementCounter">&lt;</button>
         <button id='nextBtn' @click="incrementCounter">></button>
 
     </div>
@@ -20,11 +20,8 @@ export default {
     name:'Baner',
     data() {
         return {
-
             counter:0,
-
-            banerWidth : 0,
-
+            banerWidth:0,
         }
     },
     methods:{
