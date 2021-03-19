@@ -1,5 +1,11 @@
 <template>
+    <div id='recommended'>
+        <h1>Recommened products</h1>
+        <div id='recommended-products'>
 
+        </div>
+
+    </div>
 </template>
 
 <script>
@@ -7,7 +13,8 @@
         name:'RecommendedProducts',
         data() {
             return {
-
+                recommendedProductsList:[
+                ],
             }
         },
         methods:{

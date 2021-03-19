@@ -150,6 +150,13 @@
 @media (max-width: 1024px) {
   .carousel-container {
     width: 100%; } }
+#recommended {
+  margin-top: 5vh;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(59, 59, 59, 0.452);
+  text-align: center; }
+
 * {
   margin: 0px;
   padding: 0px;

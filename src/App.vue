@@ -3,6 +3,7 @@
   <div id="app">
       <Menu></Menu>
       <Baner></Baner>
+      <RecommendedProducts></RecommendedProducts>
   </div>
 </template>
 
@@ -10,10 +11,11 @@
 
 import Menu from "./components/Menu";
 import Baner from './components/Baner';
+import RecommendedProducts from './components/RecommendedProducts'
 
 export default {
   name: 'App',
-  components:{ Menu,Baner },
+  components:{ Menu,Baner,RecommendedProducts },
   data () {
     return {
     }
