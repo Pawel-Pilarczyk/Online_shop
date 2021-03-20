@@ -1,10 +1,10 @@
-export default products = [
+export let products = [
     {
         index: 0,
         name: 'Sofa1',
         stock: 2,
         price: 2220,
-        mainPicUrl: './media/pics/baner1.jpg',
+        mainPicUrl: require('../../media/pics/baner1.jpg'),
         pic1:'',
         pic2:'',
         dimentions:'xx x xx x xx',
@@ -12,5 +12,34 @@ export default products = [
         inStock: true,
         recommended: true,
         specialPrice: false,
-    }
+    },
+    {
+        index: 1,
+        name: 'Sofa1',
+        stock: 2,
+        price: 2220,
+        mainPicUrl: require('../../media/pics/baner2.jpg'),
+        pic1:'',
+        pic2:'',
+        dimentions:'xx x xx x xx',
+        desription:'xxxxxx',
+        inStock: true,
+        recommended: false,
+        specialPrice: false,
+    },
+    {
+        index: 2,
+        name: 'Sofa1',
+        stock: 6,
+        price: 2220,
+        mainPicUrl: require('../../media/pics/baner3.jpg'),
+        pic1:'',
+        pic2:'',
+        dimentions:'xx x xx x xx',
+        desription:'xxxxxx',
+        inStock: true,
+        recommended: true,
+        specialPrice: false,
+    },
+
 ]

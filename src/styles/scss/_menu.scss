@@ -127,6 +127,7 @@ $color-primary: rgba(75, 75, 75, 0.719);
         flex-direction: row;
         background-color: $color-primary;
         contain: strict;
+        z-index: 999;
 
 
         >ul{

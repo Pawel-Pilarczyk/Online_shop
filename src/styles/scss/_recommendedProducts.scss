@@ -1,9 +1,27 @@
 #recommended{
-    margin-top: 5vh;
-    height: 20vh;
+    margin-top: 10vh;
+    height: 25vh;
     width: 100%;
     background-color: rgba(59, 59, 59, 0.452);
 
     text-align: center;
 
+    h1{
+        padding-top: 3vh;
+    }
+
+    #recommended-products{
+        display: flex;
+        justify-content: space-around;
+
+        img{
+            height: 15vh;
+            background-position: center;
+            background-size: cover;
+
+            &:hover{
+                border: 2px solid grey;
+            }
+        }
+    }
 }

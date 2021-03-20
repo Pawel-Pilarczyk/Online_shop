@@ -83,7 +83,8 @@
     width: 100vw;
     flex-direction: row;
     background-color: rgba(75, 75, 75, 0.719);
-    contain: strict; }
+    contain: strict;
+    z-index: 999; }
     #main-navigation > ul {
       flex-direction: row;
       width: 100vw;
@@ -151,11 +152,22 @@
   .carousel-container {
     width: 100%; } }
 #recommended {
-  margin-top: 5vh;
-  height: 20vh;
+  margin-top: 10vh;
+  height: 25vh;
   width: 100%;
   background-color: rgba(59, 59, 59, 0.452);
   text-align: center; }
+  #recommended h1 {
+    padding-top: 3vh; }
+  #recommended #recommended-products {
+    display: flex;
+    justify-content: space-around; }
+    #recommended #recommended-products img {
+      height: 15vh;
+      background-position: center;
+      background-size: cover; }
+      #recommended #recommended-products img:hover {
+        border: 2px solid grey; }
 
 * {
   margin: 0px;

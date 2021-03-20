@@ -3,6 +3,8 @@
         <h1>Recommened products</h1>
         <div id='recommended-products'>
 
+                <img v-for="product in recommendedProducts" :key="product.id" :src='product.mainPicUrl'>
+
         </div>
 
     </div>
@@ -13,8 +15,7 @@
         name:'RecommendedProducts',
         data() {
             return {
-                recommendedProductsList:[
-                ],
+                recommendedProducts: this.$store.state.products.filter(x => x.recommended === true),
             }
         },
         methods:{
