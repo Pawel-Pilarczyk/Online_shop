@@ -1,27 +1,47 @@
 #recommended{
     margin-top: 10vh;
-    height: 25vh;
+    margin-bottom: 20vh;
+    height: 30vh;
     width: 100%;
-    background-color: rgba(59, 59, 59, 0.452);
-
     text-align: center;
 
+    #rec-options{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid grey;
+        margin-bottom: 2vh;
+    }
+
     h1{
-        padding-top: 3vh;
+        margin-bottom: 2vh;
+        cursor: pointer
+
     }
 
     #recommended-products{
         display: flex;
         justify-content: space-around;
 
-        img{
-            height: 15vh;
-            background-position: center;
-            background-size: cover;
+        .recommended-product{
+            width: 20%;
 
-            &:hover{
-                border: 2px solid grey;
+            >img{
+                width: 250px;
+                height: 150px;
+                background-position: center;
+                background-size: cover;
+
+                box-sizing: border-box;
+
+                &:hover{
+                    border: 2px solid grey;
+                }
             }
+
         }
     }
+}
+
+.option-active{
+    border-bottom:4px solid red;
 }
