@@ -9,18 +9,23 @@
         display: flex;
         justify-content: space-around;
         border-bottom: 2px solid grey;
-        margin-bottom: 2vh;
     }
 
     h1{
-        margin-bottom: 2vh;
-        cursor: pointer
+        cursor: pointer;
+        font-size: 1.5rem;
 
+        &:hover{
+            border-bottom:4px solid red;
+        }
     }
 
     #recommended-products{
         display: flex;
         justify-content: space-around;
+        padding: 6vh;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.171);
+        background-color: rgba(175, 175, 175, 0.548);
 
         .recommended-product{
             width: 20%;
@@ -30,8 +35,9 @@
                 height: 150px;
                 background-position: center;
                 background-size: cover;
+                box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.171);
 
-                box-sizing: border-box;
+                cursor: pointer;
 
                 &:hover{
                     border: 2px solid grey;
