@@ -187,6 +187,10 @@
 .option-active {
   border-bottom: 4px solid red; }
 
+.special-price {
+  color: red;
+  text-decoration: line-through; }
+
 * {
   margin: 0px;
   padding: 0px;

@@ -11,7 +11,7 @@ export let products = [
         desription:'xxxxxx',
         inStock: true,
         recommended: true,
-        specialPrice: false,
+        specialPrice: true,
     },
     {
         index: 1,
@@ -25,7 +25,7 @@ export let products = [
         desription:'xxxxxx',
         inStock: true,
         recommended: false,
-        specialPrice: false,
+        specialPrice: true,
     },
     {
         index: 2,
