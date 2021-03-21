@@ -1,5 +1,6 @@
 /* eslint-disable no-debugger, no-console */
 <template>
+  <div>
     <nav id='main-navigation' :class="menuActive ? 'menu-active-index' : 'menu-unactive-index'">
 
         <ul :class="menuActive ? 'menu-active' : 'menu-unactive'">
@@ -10,14 +11,16 @@
             <li><router-link to="/contact">Contact</router-link></li>
             <li><router-link to="/cart">Cart [{{ itemsInCart }}]</router-link></li>
         </ul>
-
-        <div id='burger' @click="menuToggle" :class="burgerActive ? 'burger-active' : 'burger-unactive'">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
     </nav>
+
+
+      <div id='burger' @click="menuToggle" :class="burgerActive ? 'burger-active' : 'burger-unactive'">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
 </template>
 
 

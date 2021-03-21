@@ -59,11 +59,12 @@ $color-primary: rgba(75, 75, 75, 0.719);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: absolute;
+    position: fixed;
     top:20px;
     right: 20px;
 
-    z-index: 999;
+    z-index: 9999;
+
 
     >div{
         width: 80%;

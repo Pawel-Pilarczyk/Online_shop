@@ -40,10 +40,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 999; }
+  z-index: 9999; }
   #burger > div {
     width: 80%;
     height: 5px;
@@ -156,7 +156,8 @@
   margin-bottom: 20vh;
   height: 30vh;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   #recommended #rec-options {
     display: flex;
     justify-content: space-around;
@@ -183,6 +184,10 @@
         cursor: pointer; }
         #recommended #recommended-products .recommended-product > img:hover {
           border: 2px solid grey; }
+      #recommended #recommended-products .recommended-product > h4 {
+        font-size: 1.6rem; }
+      #recommended #recommended-products .recommended-product > h5 {
+        font-size: 1.4rem; }
 
 .option-active {
   border-bottom: 4px solid red; }
@@ -191,6 +196,20 @@
   color: red;
   text-decoration: line-through; }
 
+@media (max-width: 1124px) {
+  #recommended #recommended-products {
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0; } }
+@media (max-width: 980px) {
+  #recommended #recommended-products {
+    flex-direction: column; }
+    #recommended #recommended-products .recommended-product {
+      width: 100%;
+      padding: 40px; }
+      #recommended #recommended-products .recommended-product > img {
+        width: 80%;
+        height: auto; } }
 * {
   margin: 0px;
   padding: 0px;

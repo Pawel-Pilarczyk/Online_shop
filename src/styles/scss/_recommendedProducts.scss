@@ -4,6 +4,8 @@
     height: 30vh;
     width: 100%;
     text-align: center;
+    position: relative;
+
 
     #rec-options{
         display: flex;
@@ -42,9 +44,20 @@
                 &:hover{
                     border: 2px solid grey;
                 }
+
+            }
+
+            >h4{
+                font-size: 1.6rem;
+            }
+
+            >h5{
+                font-size: 1.4rem;
             }
 
         }
+
+
     }
 }
 
@@ -55,4 +68,29 @@
 .special-price{
     color: red;
     text-decoration: line-through;
+}
+
+@media (max-width:1124px){
+    #recommended #recommended-products{
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width:980px){
+    #recommended #recommended-products{
+        flex-direction: column;
+
+        .recommended-product{
+            width: 100%;
+            padding:40px;
+
+            >img{
+                width: 80%;
+                height: auto;
+            }
+
+        }
+    }
 }
