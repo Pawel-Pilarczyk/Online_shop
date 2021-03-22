@@ -4,6 +4,8 @@
       <Menu></Menu>
       <Baner></Baner>
       <RecommendedProducts></RecommendedProducts>
+      <Footer></Footer>
+      <Product></Product>
   </div>
 </template>
 
@@ -12,10 +14,12 @@
 import Menu from "./components/Menu";
 import Baner from './components/Baner';
 import RecommendedProducts from './components/RecommendedProducts'
+import Footer from './components/Footer'
+import Product from './components/Product'
 
 export default {
   name: 'App',
-  components:{ Menu,Baner,RecommendedProducts },
+  components:{ Menu,Baner,RecommendedProducts,Footer,Product },
   data () {
     return {
     }

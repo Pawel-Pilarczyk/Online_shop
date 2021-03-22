@@ -152,12 +152,11 @@
   .carousel-container {
     width: 100%; } }
 #recommended {
-  margin-top: 10vh;
-  margin-bottom: 20vh;
   height: 30vh;
   width: 100%;
   text-align: center;
-  position: relative; }
+  margin-top: 10vh;
+  margin-bottom: 35vh; }
   #recommended #rec-options {
     display: flex;
     justify-content: space-around;
@@ -188,6 +187,18 @@
         font-size: 1.6rem; }
       #recommended #recommended-products .recommended-product > h5 {
         font-size: 1.4rem; }
+  #recommended button {
+    width: 150px;
+    height: 50px;
+    margin-top: 5vh;
+    border: 3px solid grey;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.4rem;
+    outline: transparent; }
+    #recommended button:hover {
+      border-color: #0084ff;
+      color: #0084ff; }
 
 .option-active {
   border-bottom: 4px solid red; }

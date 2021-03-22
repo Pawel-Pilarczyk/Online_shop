@@ -1,10 +1,10 @@
 #recommended{
-    margin-top: 10vh;
-    margin-bottom: 20vh;
     height: 30vh;
     width: 100%;
     text-align: center;
-    position: relative;
+
+    margin-top: 10vh;
+    margin-bottom: 35vh;
 
 
     #rec-options{
@@ -56,8 +56,22 @@
             }
 
         }
+    }
 
+    button{
+        width: 150px;
+        height: 50px;
+        margin-top: 5vh;
+        border:3px solid grey;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 1.4rem;
+        outline: transparent;
 
+        &:hover{
+            border-color: rgb(0, 132, 255);
+            color: rgb(0, 132, 255);
+        }
     }
 }
 

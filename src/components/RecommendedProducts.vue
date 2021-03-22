@@ -24,9 +24,11 @@
 
         </div>
 
-        <button>Show More</button>
+         <button><router-link to="/2">Show More</router-link></button>
+
 
     </div>
+
 </template>
 
 <script>
