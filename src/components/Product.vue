@@ -1,14 +1,20 @@
 <template>
     <div id="product">
         <img :src="product.mainPicUrl" alt="">
-        <h1>{{product.name}}</h1>
 
-        <h5 :class="product.specialPrice ? 'special-price' : ''">{{product.price}} $</h5>
-        <h5 v-if='product.specialPrice'>{{product.price * 0.8}} $</h5>
-        <h5>Dimentions {{ product.dimentions }}</h5>
-        <h5>Stock: {{product.stock}}</h5>
+        <div id="product-info">
+            <h1>{{product.name}}</h1>
+            <ul>
+                <li :class="product.specialPrice ? 'special-price' : ''">{{product.price}} $</li>
+                <li v-if='product.specialPrice'>{{product.price * 0.8}} $</li>
+                <li>Dimentions {{ product.dimentions }}</li>
+                <li>Stock: {{product.stock}}</li>
+            </ul>
 
-        <button>Add to the cart</button>
+
+            <button>Add to the cart</button>
+        </div>
+
 
 
         <p>{{product.description}}</p>

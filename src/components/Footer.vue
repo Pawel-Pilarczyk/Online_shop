@@ -16,7 +16,6 @@
     background-color: grey;
     display: flex;
 }
-
 #footer h1{
   margin: auto;
   color: white;

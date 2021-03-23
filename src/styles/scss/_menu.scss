@@ -11,8 +11,6 @@ $color-primary: rgba(75, 75, 75, 0.719);
 
     transition: transform 2s;
 
-
-
     >ul{
         height: 100vh;
         margin: 0;
@@ -97,6 +95,7 @@ $color-primary: rgba(75, 75, 75, 0.719);
     animation-name: fadingOut;
     animation-duration: 2s;
     z-index: 0;
+    display: none;
 }
 
 
