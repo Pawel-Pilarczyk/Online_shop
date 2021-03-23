@@ -12,7 +12,8 @@
         <div id='recommended-products'>
 
                 <div class='recommended-product'  v-for="product in products" :key="product.id">
-                    <img :src='product.mainPicUrl'>
+
+                    <router-link :to="{ name: 'product', params: { id: product.index }}"><img :src='product.mainPicUrl'></router-link>
 
                     <h4>{{product.name}}</h4>
 
@@ -24,7 +25,7 @@
 
         </div>
 
-         <button><router-link to="/2">Show More</router-link></button>
+         <button>Show More</button>
 
 
     </div>

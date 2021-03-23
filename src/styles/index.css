@@ -174,14 +174,14 @@
     background-color: rgba(175, 175, 175, 0.548); }
     #recommended #recommended-products .recommended-product {
       width: 20%; }
-      #recommended #recommended-products .recommended-product > img {
+      #recommended #recommended-products .recommended-product > a > img {
         width: 250px;
         height: 150px;
         background-position: center;
         background-size: cover;
         box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.171);
         cursor: pointer; }
-        #recommended #recommended-products .recommended-product > img:hover {
+        #recommended #recommended-products .recommended-product > a > img:hover {
           border: 2px solid grey; }
       #recommended #recommended-products .recommended-product > h4 {
         font-size: 1.6rem; }

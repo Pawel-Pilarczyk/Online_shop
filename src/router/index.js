@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from '../App'
 import Baner from '../components/Baner';
 import RecommendedProducts from '../components/RecommendedProducts'
 import Product from '../components/Product'
+import AboutUs from '@/components/AboutUs'
 
 Vue.use(Router)
 
@@ -18,7 +18,17 @@ export default new Router({
     },
     {
       path:'/product/:id',
-      component:Product,
+      components:{
+        default: Product,
+      },
+      props:true,
+      name:'product'
+    },
+    {
+      path:'/about',
+      components:{
+        default: AboutUs,
+      },
       props:true,
     }
 

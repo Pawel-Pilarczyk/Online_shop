@@ -40,12 +40,15 @@ export default {
     },
     created() {
         window.addEventListener("resize", this.myEventHandler);
-        document.addEventListener('DOMContentLoaded', this.myEventHandler);
     },
     destroyed() {
         window.removeEventListener("resize", this.myEventHandler);
-        document.addEventListener('DOMContentLoaded', this.myEventHandler);
     },
+    mounted() {
+        this.$nextTick(function () {
+            this.myEventHandler();
+        })
+    }
 }
 
 </script>
