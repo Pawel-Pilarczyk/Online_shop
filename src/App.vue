@@ -2,10 +2,9 @@
 <template>
   <div id="app">
       <Menu></Menu>
-      <Baner></Baner>
-      <RecommendedProducts></RecommendedProducts>
+        <router-view></router-view>
+        <router-view name="inner"></router-view>
       <Footer></Footer>
-      <Product></Product>
   </div>
 </template>
 

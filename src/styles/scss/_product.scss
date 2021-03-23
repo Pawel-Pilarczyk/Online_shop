@@ -1,4 +1,4 @@
-#product{
+#productDisplay{
 
     width: 60%;
     height: auto;
@@ -46,7 +46,7 @@
             font-size:1.2rem;
         }
 
-        li:nth-child(2){
+        .price{
             font-size:2rem;
         }
     }
