@@ -19,7 +19,7 @@ export default new Router({
     {
       path:'/product/:id',
       components:{
-        default: Product,
+        inner: Product,
       },
       props:true,
       name:'product'
@@ -28,8 +28,7 @@ export default new Router({
       path:'/about',
       components:{
         default: AboutUs,
-      },
-      props:true,
+      }
     }
 
 

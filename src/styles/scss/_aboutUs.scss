@@ -1,0 +1,69 @@
+#about-us{
+    width: 100%;
+    height: auto;
+    margin: 10vh auto;
+    text-align: center;
+
+    >h1{
+        font-size: 4rem;
+        padding:5vh;
+        color: white;
+        background-color: $color-primary;
+    }
+
+    >h2{
+        padding:10vh 0vh;
+    }
+
+    >img{
+        width: 100%;
+        height: 500px;
+        background-image: url('../media/pics/sofa1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+#ourTeam{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    >h1{
+        padding: 5vh
+    }
+
+    >.employee{
+        padding: 5vh 0;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 5vh;
+        }
+    }
+
+}
+
+
+#employee1{
+    >img{
+        background-image: url('../media/pics/employee1.jpg');
+    }
+}
+
+#employee2{
+    >img{
+        background-image: url('../media/pics/employee2.jpg');
+    }
+}
+
+#employee3{
+    >img{
+        background-image: url('../media/pics/employee3.jpg');
+    }
+}

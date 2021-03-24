@@ -224,8 +224,7 @@
 #Display {
   width: 60%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 10vh;
+  margin: 20vh auto;
   display: grid;
   text-align: center;
   grid-template-columns: 2fr 1fr;
@@ -252,6 +251,52 @@
     font-size: 1.2rem; }
   #product-info > ul .price {
     font-size: 2rem; }
+
+#about-us {
+  width: 100%;
+  height: auto;
+  margin: 10vh auto;
+  text-align: center; }
+  #about-us > h1 {
+    font-size: 4rem;
+    padding: 5vh;
+    color: white;
+    background-color: rgba(75, 75, 75, 0.719); }
+  #about-us > h2 {
+    padding: 10vh 0vh; }
+  #about-us > img {
+    width: 100%;
+    height: 500px;
+    background-image: url("../media/pics/sofa1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+#ourTeam {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  #ourTeam > h1 {
+    padding: 5vh; }
+  #ourTeam > .employee {
+    padding: 5vh 0; }
+    #ourTeam > .employee img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 5vh; }
+
+#employee1 > img {
+  background-image: url("../media/pics/employee1.jpg"); }
+
+#employee2 > img {
+  background-image: url("../media/pics/employee2.jpg"); }
+
+#employee3 > img {
+  background-image: url("../media/pics/employee3.jpg"); }
 
 * {
   margin: 0px;
