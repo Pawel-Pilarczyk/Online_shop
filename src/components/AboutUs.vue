@@ -5,7 +5,24 @@
 
         <img alt="">
 
+
+        <section id="timeline">
+
+             <div class='timelineItem' id="timeLineItem1">
+                <h3>20-03-2021</h3>
+                <p>xxx</p>
+            </div>
+
+            <div class='timelineItem' id="timeLineItem1">
+                <h3>20-04-2021</h3>
+                <p>xxx</p>
+            </div>
+
+        </section>
+
+
         <h1>Our Team</h1>
+
         <div id="ourTeam">
 
             <div class='employee' id="employee1">
