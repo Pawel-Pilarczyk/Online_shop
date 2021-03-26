@@ -4,6 +4,11 @@
     margin: 10vh auto;
     text-align: center;
 
+    >p{
+        padding: 5vh;
+        padding-top: 0;
+    }
+
     >h1{
         font-size: 4rem;
         padding:5vh;
@@ -81,13 +86,17 @@
         >h3{
             margin: auto;
             color: $color-primary;
+            margin-right:2%;
         }
 
         >p{
             margin: auto;
+            margin-left:0;
             width: 70%;
             padding: 5vh;
-            background-color: rgba(75, 75, 75, 1);
+            font-size: 1.2rem;
+            background-color: rgb(180, 180, 180);
+            color:white;
             border-left: 4px solid rgb(25, 25, 255);
             border-bottom: 2px solid lighten($color-primary,30%);
             position: relative;
@@ -98,7 +107,7 @@
                 height: 10px;
                 border-radius: 100%;
                 border: 4px solid rgb(25, 25, 255);
-                background-color: rgba(75, 75, 75, 1);
+                background-color: rgb(255, 255, 255);
                 position: absolute;
                 left:-10px;
                 top:0;
@@ -114,3 +123,30 @@
     }
 
 }
+
+@media (min-width:1024px){
+    #about-us{
+        >h2{
+            width: 80%;
+            font-size: 3rem;
+            margin: auto;
+        }
+        >p{
+            font-size:1.4rem;
+            padding-bottom:10vh;
+        }
+    }
+
+    #ourTeam{
+
+     flex-direction:row;
+
+    }
+
+    #timeline{
+        width:60%;
+        padding:10vh 0;
+        margin:auto;
+    }
+}
+

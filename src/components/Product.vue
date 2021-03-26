@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="Display">
+        <div id="displayItem">
             <img :src="product.mainPicUrl" alt="">
 
             <div id="product-info">

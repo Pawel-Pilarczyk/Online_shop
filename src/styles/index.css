@@ -221,7 +221,7 @@
       #recommended #recommended-products .recommended-product > img {
         width: 80%;
         height: auto; } }
-#Display {
+#displayItem {
   width: 60%;
   height: auto;
   margin: 20vh auto;
@@ -231,13 +231,13 @@
   grid-template-rows: 1fr 0.5fr;
   box-shadow: 5px 5px 15px 9px rgba(0, 0, 0, 0.116);
   grid-gap: 10px; }
-  #Display img {
+  #displayItem img {
     width: 400px;
     height: 250px;
     background-position: center;
     margin: auto;
     padding: 28px; }
-  #Display p {
+  #displayItem p {
     grid-column: 1/3;
     padding: 5% 10%; }
 
@@ -252,11 +252,29 @@
   #product-info > ul .price {
     font-size: 2rem; }
 
+@media (max-width: 1100px) {
+  #displayItem {
+    margin: 5vh auto;
+    width: 100%; } }
+@media (max-width: 724px) {
+  #displayItem {
+    display: flex;
+    flex-direction: column; }
+    #displayItem > p {
+      padding-bottom: 10vh; }
+
+  #product-info {
+    text-align: center; }
+    #product-info > h1 {
+      padding: 0; } }
 #about-us {
   width: 100%;
   height: auto;
   margin: 10vh auto;
   text-align: center; }
+  #about-us > p {
+    padding: 5vh;
+    padding-top: 0; }
   #about-us > h1 {
     font-size: 4rem;
     padding: 5vh;
@@ -308,12 +326,16 @@
     justify-content: space-between; }
     #timeline > .timelineItem > h3 {
       margin: auto;
-      color: rgba(75, 75, 75, 0.719); }
+      color: rgba(75, 75, 75, 0.719);
+      margin-right: 2%; }
     #timeline > .timelineItem > p {
       margin: auto;
+      margin-left: 0;
       width: 70%;
       padding: 5vh;
-      background-color: #4b4b4b;
+      font-size: 1.2rem;
+      background-color: #b4b4b4;
+      color: white;
       border-left: 4px solid #1919ff;
       border-bottom: 2px solid rgba(152, 152, 152, 0.719);
       position: relative; }
@@ -323,7 +345,7 @@
         height: 10px;
         border-radius: 100%;
         border: 4px solid #1919ff;
-        background-color: #4b4b4b;
+        background-color: white;
         position: absolute;
         left: -10px;
         top: 0;
@@ -332,6 +354,22 @@
       #timeline > .timelineItem > p:hover::before {
         background-color: #1919ff; }
 
+@media (min-width: 1024px) {
+  #about-us > h2 {
+    width: 80%;
+    font-size: 3rem;
+    margin: auto; }
+  #about-us > p {
+    font-size: 1.4rem;
+    padding-bottom: 10vh; }
+
+  #ourTeam {
+    flex-direction: row; }
+
+  #timeline {
+    width: 60%;
+    padding: 10vh 0;
+    margin: auto; } }
 * {
   margin: 0px;
   padding: 0px;
