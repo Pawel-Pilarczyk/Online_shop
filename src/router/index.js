@@ -4,6 +4,7 @@ import Baner from '../components/Baner';
 import RecommendedProducts from '../components/RecommendedProducts'
 import Product from '../components/Product'
 import AboutUs from '@/components/AboutUs'
+import Products from '@/components/Products'
 
 Vue.use(Router)
 
@@ -28,6 +29,12 @@ export default new Router({
       path:'/about',
       components:{
         default: AboutUs,
+      }
+    },
+    {
+      path:'/products',
+      components:{
+        default: Products,
       }
     }
 
