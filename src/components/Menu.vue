@@ -32,7 +32,7 @@ export default {
     return {
       menuActive:false,
       burgerActive: false,
-      itemsInCart: this.$store.state.cart.length,
+
     }
   },
 
@@ -41,7 +41,11 @@ export default {
       this.menuActive = !this.menuActive;
       this.burgerActive =!this.burgerActive;
     }
+  },
+  computed:{
+    itemsInCart(){return this.$store.getters.cartLength},
   }
+
 }
 
 </script>

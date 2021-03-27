@@ -12,13 +12,15 @@ export default new Vuex.Store({
     },
 
     mutations:{
-        addTotheCart(product){
-            this.cart.push(product);
+        addTotheCart(state,payload){
+            state.cart.push(state.products[payload.id]);
         }
     },
 
     getters:{
-
+        cartLength(state){
+            return state.cart.length;
+        }
     },
 
 

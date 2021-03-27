@@ -13,7 +13,7 @@
                 </ul>
 
 
-                <button>Add to the cart</button>
+                <button @click="addTotheCart(product.index)">Add to the cart</button>
             </div>
 
 
@@ -33,7 +33,9 @@
             }
         },
         methods:{
-
+            addTotheCart(id){
+                this.$store.commit('addTotheCart',{id:id})
+            }
         }
     }
 </script>
