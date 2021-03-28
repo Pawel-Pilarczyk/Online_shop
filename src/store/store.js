@@ -13,7 +13,9 @@ export default new Vuex.Store({
 
     mutations:{
         addTotheCart(state,payload){
-            state.cart.push(state.products[payload.id]);
+            if(!state.cart.includes(products[payload.id])){
+                state.cart.push(state.products[payload.id]);
+            }
         }
     },
 
@@ -22,7 +24,5 @@ export default new Vuex.Store({
             return state.cart.length;
         }
     },
-
-
 
 });

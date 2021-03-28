@@ -5,6 +5,7 @@ import RecommendedProducts from '../components/RecommendedProducts'
 import Product from '../components/Product'
 import AboutUs from '@/components/AboutUs'
 import Products from '@/components/Products'
+import Cart from '@/components/Cart'
 
 Vue.use(Router)
 
@@ -35,6 +36,12 @@ export default new Router({
       path:'/products',
       components:{
         default: Products,
+      }
+    },
+    {
+      path:'/cart',
+      components:{
+        default: Cart,
       }
     }
 

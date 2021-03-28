@@ -394,6 +394,36 @@
 @media (max-width: 1024px) {
   #productsDisplay {
     width: 100%; } }
+#cart {
+  width: 100%;
+  padding: 20vh 0vh;
+  margin: 0 auto; }
+  #cart table {
+    width: 100%;
+    text-align: center; }
+    #cart table > thead {
+      font-size: 1.6rem;
+      background-color: rgba(75, 75, 75, 0.719);
+      color: white; }
+    #cart table > tr {
+      background-color: rgba(139, 139, 139, 0.719); }
+      #cart table > tr > td:last-child {
+        font-weight: bold; }
+    #cart table td {
+      font-size: 1.3rem; }
+  #cart > button {
+    width: 50%;
+    height: 5vh;
+    margin: 15vh auto;
+    display: block;
+    font-size: 1.5rem; }
+
+@media (min-width: 1024px) {
+  #cart {
+    width: 80%; } }
+@media (min-width: 1280px) {
+  #cart {
+    width: 60%; } }
 * {
   margin: 0px;
   padding: 0px;

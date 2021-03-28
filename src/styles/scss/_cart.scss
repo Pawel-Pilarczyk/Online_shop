@@ -1,0 +1,49 @@
+#cart{
+    width: 100%;
+    padding: 20vh 0vh;
+    margin: 0 auto;
+
+    table{
+        width: 100%;
+        text-align: center;
+
+        >thead{
+            font-size: 1.6rem;
+            background-color: $color-primary;
+            color: white;
+        }
+
+        >tr{
+            background-color: lighten($color-primary,25%);
+
+            >td:last-child{
+                font-weight: bold;
+            }
+        }
+
+        td{
+            font-size: 1.3rem;
+        }
+    }
+
+    >button{
+        width: 50%;
+        height: 5vh;
+        margin: 15vh auto;
+        display: block;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width:1024px){
+    #cart{
+        width: 80%;
+    }
+}
+
+@media (min-width:1280px){
+    #cart{
+        width: 60%;
+    }
+}
