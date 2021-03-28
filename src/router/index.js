@@ -6,6 +6,7 @@ import Product from '../components/Product'
 import AboutUs from '@/components/AboutUs'
 import Products from '@/components/Products'
 import Cart from '@/components/Cart'
+import Contact from '@/components/Contact'
 
 Vue.use(Router)
 
@@ -42,6 +43,12 @@ export default new Router({
       path:'/cart',
       components:{
         default: Cart,
+      }
+    },
+    {
+      path:'/contact',
+      components:{
+        default: Contact,
       }
     }
 

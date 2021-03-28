@@ -1,0 +1,52 @@
+#contact{
+    width: 100%;
+
+    >#contactBaner{
+        width: 100%;
+        height: 60vh;
+
+        margin:10vh auto 0 auto;
+
+        background-image: url('~@/media/pics/call.jpg');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        position:relative;
+
+        text-align: center;
+
+        >.layer{
+            background-color: rgba(0, 17, 255, 0.397);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+
+        >h3{
+            color:white;
+            padding-top: 20%;
+
+            font-size: 2rem;
+
+            z-index: 2;
+
+
+        }
+    }
+
+    >#contactOptions{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            width: 90%;
+            height: 50vh;
+            background-color: yellow;
+            margin:10vh auto 0 auto;
+        }
+    }
+
+}
