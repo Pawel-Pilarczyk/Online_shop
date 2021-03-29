@@ -10,7 +10,7 @@
             <tr v-for="item in cartItems" :key="item.index">
                 <td>{{ cartItems.indexOf(item) + 1}}</td>
                 <td>{{ item.name }}</td>
-                <td>{{ item.price }}$</td>
+                <td>{{ item.specialPrice ? Math.floor(item.price * 0.8) : item.price}}$</td>
             </tr>
 
 
@@ -48,7 +48,9 @@
         },
         computed:{
             cartItems(){return this.$store.state.cart},
-            totalCost(){return  this.$store.state.cart.reduce( (t, {price}) => t + price,0)},
+            totalCost(){return  this.$store.state.cart.reduce( (t, item) => {
+                return item.specialPrice ? t + (item.price * 0.8) : t + item.price
+            },0)},
             shippingCost(){return 200 * this.$store.getters.cartLength}
         }
     }

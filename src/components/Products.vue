@@ -4,7 +4,7 @@
         <div class='productItem' v-for="product in products" :key='product.index'>
             <router-link :to="{ name: 'product', params: { id: product.index }}"><img :src="product.mainPicUrl" alt=""></router-link>
             <h1>{{product.name}}</h1>
-            <h2>{{ product.price }}$$</h2>
+            <h2>{{ product.specialPrice ? Math.floor(product.price * 0.8) : product.price}}$$</h2>
         </div>
     </div>
 

@@ -15,6 +15,7 @@ $color-primary: rgba(75, 75, 75, 0.719);
         height: 100vh;
         margin: 0;
         padding: 0;
+        padding-top:10vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -35,16 +36,22 @@ $color-primary: rgba(75, 75, 75, 0.719);
             list-style: none;
 
             >a{
-                color: black;
+                width: 100%;
                 text-decoration: none;
                 color:white;
                 padding: 10px;
                 display: inline-block;
+                text-align: center;
             }
 
             &:hover{
                 background-color: darken($color-primary,10%);
             }
+        }
+
+        >li:first-child{
+            font-weight: bold;
+            font-size: 2rem;
         }
 
     }
@@ -131,15 +138,11 @@ $color-primary: rgba(75, 75, 75, 0.719);
 
 
         >ul{
+            padding: 0;
             flex-direction: row;
             width: 100vw;
             height: 7vh;
             overflow-y: hidden;
-
-            >img{
-                height: 7vh;
-                padding-left: 5vw;
-            }
 
             >li{
                 padding: 0;
@@ -149,6 +152,8 @@ $color-primary: rgba(75, 75, 75, 0.719);
                 bottom: 0;
                 margin: auto;
                 font-size: 1.5rem;
+
+
             }
 
         }

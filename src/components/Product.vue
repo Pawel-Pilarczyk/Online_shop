@@ -7,7 +7,7 @@
                 <h1>{{product.name}}</h1>
                 <ul>
                     <li class="price" :class="product.specialPrice ? 'special-price' : ''">{{product.price}} $</li>
-                    <li class="price" v-if='product.specialPrice'>{{product.price * 0.8}} $</li>
+                    <li class="price" v-if='product.specialPrice'>{{Math.floor(product.price * 0.8)}} $</li>
                     <li>Dimentions {{ product.dimentions }}</li>
                     <li>Stock: {{product.stock}}</li>
                 </ul>
