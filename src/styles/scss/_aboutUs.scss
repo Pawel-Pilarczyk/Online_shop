@@ -23,7 +23,7 @@
     >img{
         width: 100%;
         height: 500px;
-        background-image: url(../media/pics/sofa1.jpg);
+        background-image: url(~../media/pics/sofa1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,19 +57,19 @@
 
 #employee1{
     >img{
-        background-image: url(../media/pics/employee1.jpg);
+        background-image: url(~../media/pics/employee1.jpg);
     }
 }
 
 #employee2{
     >img{
-        background-image: url(../media/pics/employee2.jpg);
+        background-image: url(~../media/pics/employee2.jpg);
     }
 }
 
 #employee3{
     >img{
-        background-image: url(../media/pics/employee3.jpg);
+        background-image: url(~../media/pics/employee3.jpg);
     }
 }
 

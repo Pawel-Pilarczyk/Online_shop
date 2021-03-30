@@ -113,7 +113,7 @@
     transform: translate(0, 0); } }
 .carousel-container {
   width: 60%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   display: block;
   overflow: hidden;
@@ -289,7 +289,7 @@
   #about-us > img {
     width: 100%;
     height: 500px;
-    background-image: url(../media/pics/sofa1.jpg);
+    background-image: url(~../media/pics/sofa1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -312,13 +312,13 @@
       margin-bottom: 5vh; }
 
 #employee1 > img {
-  background-image: url(../media/pics/employee1.jpg); }
+  background-image: url(~../media/pics/employee1.jpg); }
 
 #employee2 > img {
-  background-image: url(../media/pics/employee2.jpg); }
+  background-image: url(~../media/pics/employee2.jpg); }
 
 #employee3 > img {
-  background-image: url(../media/pics/employee3.jpg); }
+  background-image: url(~../media/pics/employee3.jpg); }
 
 #timeline {
   display: flex;
@@ -434,7 +434,7 @@
     width: 100%;
     height: 60vh;
     margin: 10vh auto 0 auto;
-    background-image: url(../media/pics/call.jpg);
+    background-image: url(~../media/pics/call.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
