@@ -7,6 +7,7 @@ import AboutUs from '@/components/AboutUs'
 import Products from '@/components/Products'
 import Cart from '@/components/Cart'
 import Contact from '@/components/Contact'
+import ControlPanel from '@/components/ControlPanel'
 
 Vue.use(Router)
 
@@ -49,6 +50,12 @@ export default new Router({
       path:'/contact',
       components:{
         default: Contact,
+      }
+    },
+    {
+      path:'/controlpanel',
+      components:{
+        default: ControlPanel,
       }
     }
 

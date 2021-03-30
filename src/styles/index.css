@@ -513,6 +513,26 @@
     #contact > #contactOptions > div:last-child {
       top: -10%;
       right: 50%; } }
+#controlPanel {
+  margin: 0 auto;
+  width: 100vw;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  text-align: center; }
+
+#loginForm > h1 {
+  padding: 5vh; }
+#loginForm > input {
+  display: block;
+  margin: 1vh auto;
+  height: 50px;
+  width: 80%;
+  font-size: 1.6rem; }
+#loginForm > label {
+  font-size: 1.4rem; }
+#loginForm > input[type=submit] {
+  margin-top: 50px; }
+
 * {
   margin: 0px;
   padding: 0px;
