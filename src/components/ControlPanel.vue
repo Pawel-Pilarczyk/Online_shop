@@ -16,7 +16,7 @@
     </template>
 
     <template v-else>
-        <div id='productsPanel' >
+        <div id='productsPanel'>
             <table>
                 <thead>
                     <td>Product</td>
@@ -25,12 +25,13 @@
 
                 <tr v-for="product in products" :key='product.index'>
                     <td>{{product.name}}</td>
-                    <td><button>EDIT</button></td>
+                    <td><router-link :to="{ name: 'productEdit', params: { id: product.index }}"><button>EDIT</button></router-link></td>
+
                 </tr>
 
             </table>
 
-            <button id="addproduct">Add new Product</button>
+            <button>Add new Product</button>
         </div>
      </template>
 

@@ -31,6 +31,58 @@
 
 }
 
+#productsPanel{
+   width: 100%;
+   text-align: center;
 
+   >table{
+    width: 100%;
+    text-align: center;
 
+        >thead{
+            font-size: 1.6rem;
+            background-color: $color-primary;
+            color: white;
+        }
+
+        >tr{
+            background-color: lighten($color-primary,25%);
+
+            >td:last-child{
+                font-weight: bold;
+            }
+        }
+
+        td{
+            font-size: 1.3rem;
+            height: 30px;
+
+            button{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    >button{
+        width: 50%;
+        height: 5vh;
+        margin: 10vh auto;
+    }
+}
+
+@media(min-width:800px){
+    #controlPanel{
+        width: 60vw;
+    }
+}
+
+@media(min-width:1024px){
+    #controlPanel{
+        width: 40vw;
+    }
+}
 

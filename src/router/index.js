@@ -8,6 +8,7 @@ import Products from '@/components/Products'
 import Cart from '@/components/Cart'
 import Contact from '@/components/Contact'
 import ControlPanel from '@/components/ControlPanel'
+import ProductEdit from '@/components/ProductEdit'
 
 Vue.use(Router)
 
@@ -57,6 +58,14 @@ export default new Router({
       components:{
         default: ControlPanel,
       }
+    },
+    {
+      path:'/productEdit/:id',
+      components:{
+        inner: ProductEdit,
+      },
+      props:true,
+      name:'productEdit'
     }
 
 
