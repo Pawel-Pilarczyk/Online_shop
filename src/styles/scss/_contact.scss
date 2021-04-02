@@ -49,7 +49,7 @@
 
         >div{
             width: 90%;
-            height: 50vh;
+            height: auto;
             margin:0 auto;
             border:2px solid $color-primary;
             position: absolute;
@@ -66,11 +66,11 @@
             }
 
             >h1{
-                padding:25px;
+                padding:10px;
                 font-size: 2.2rem;
             }
             >p{
-                padding-bottom:50px;
+                padding-bottom:10px;
                 font-size:1.3rem;
             }
             >a{
@@ -79,7 +79,7 @@
         }
 
         >div:first-child{
-            top:-20%;
+            top:-10%;
 
         }
 
@@ -107,7 +107,7 @@
 }
 
 
-@media(min-width:1024px){
+@media(min-width:900px){
     #contact{
         >#contactBaner >h3{
             padding:2vh;
@@ -119,10 +119,14 @@
             height: 500px;
             width:100%;
 
+
             >div{
                 width: 400px;
                 height: 400px;
                 z-index:10;
+                >p{
+                    padding:5%;
+                }
             }
 
             >div:first-child{

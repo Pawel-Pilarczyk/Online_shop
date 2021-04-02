@@ -17,7 +17,7 @@
             <tr id="productCost">
                 <td></td>
                 <td>Total Price:</td>
-                <td>{{ totalCost }}$</td>
+                <td>{{ Math.floor(totalCost) }}$</td>
             </tr>
 
             <tr id="shippingCost">
@@ -29,7 +29,7 @@
             <tfoot>
                 <td id="totalCost"></td>
                 <td>Total Cost</td>
-                <td>{{ shippingCost + totalCost }}$</td>
+                <td>{{ Math.floor(shippingCost + totalCost) }}$</td>
             </tfoot>
 
         </table>

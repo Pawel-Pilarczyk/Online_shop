@@ -28,11 +28,18 @@
 @media (max-width:1200px){
     #productsDisplay{
         width: 80%;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width:1024px){
+@media (max-width:900px){
     #productsDisplay{
         width:100%;
+    }
+}
+
+@media (max-width:600px){
+    #productsDisplay{
+        grid-template-columns: 1fr;
     }
 }

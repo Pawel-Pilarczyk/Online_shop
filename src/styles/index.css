@@ -394,10 +394,14 @@
 
 @media (max-width: 1200px) {
   #productsDisplay {
-    width: 80%; } }
-@media (max-width: 1024px) {
+    width: 80%;
+    grid-template-columns: 1fr 1fr; } }
+@media (max-width: 900px) {
   #productsDisplay {
     width: 100%; } }
+@media (max-width: 600px) {
+  #productsDisplay {
+    grid-template-columns: 1fr; } }
 #cart {
   width: 100%;
   padding: 20vh 0vh;
@@ -461,7 +465,7 @@
     width: 100%; }
     #contact > #contactOptions > div {
       width: 90%;
-      height: 50vh;
+      height: auto;
       margin: 0 auto;
       border: 2px solid rgba(75, 75, 75, 0.719);
       position: absolute;
@@ -472,15 +476,15 @@
       #contact > #contactOptions > div > svg {
         margin-top: 5%; }
       #contact > #contactOptions > div > h1 {
-        padding: 25px;
+        padding: 10px;
         font-size: 2.2rem; }
       #contact > #contactOptions > div > p {
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         font-size: 1.3rem; }
       #contact > #contactOptions > div > a {
         font-size: 1.4rem; }
     #contact > #contactOptions > div:first-child {
-      top: -20%; }
+      top: -10%; }
     #contact > #contactOptions > div:last-child {
       top: 35vh; }
       #contact > #contactOptions > div:last-child > button {
@@ -495,7 +499,7 @@
         #contact > #contactOptions > div:last-child > button:hover {
           background-color: rgba(0, 11, 165, 0.836); }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   #contact > #contactBaner > h3 {
     padding: 2vh;
     font-size: 4rem; }
@@ -507,6 +511,8 @@
       width: 400px;
       height: 400px;
       z-index: 10; }
+      #contact > #contactOptions > div > p {
+        padding: 5%; }
     #contact > #contactOptions > div:first-child {
       top: -10%;
       left: 50%; }
@@ -575,6 +581,9 @@
 
 body {
   overflow-x: hidden; }
+
+body::-webkit-scrollbar {
+  display: none; }
 
 style, title {
   display: none; }

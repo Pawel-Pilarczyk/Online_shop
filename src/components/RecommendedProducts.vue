@@ -19,7 +19,7 @@
 
                     <h5 :class="product.specialPrice ? 'special-price' : ''">{{product.price}} $</h5>
 
-                    <h5 v-if='product.specialPrice'>{{product.price * 0.8}} $</h5>
+                    <h5 v-if='product.specialPrice'>{{Math.floor(product.price * 0.8)}} $</h5>
 
                 </div>
 
