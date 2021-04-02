@@ -30,7 +30,7 @@
 
         >h3{
             color:white;
-            padding: 20%;
+            padding: 10%;
 
             font-size: 2rem;
 
@@ -44,7 +44,7 @@
         display: flex;
         flex-direction: column;
         position:relative;
-        height: 100vh;
+        height: 150vh;
         width: 100%;
 
         >div{
@@ -84,7 +84,7 @@
         }
 
         >div:last-child{
-            top:35vh;
+            top:55vh;
 
             >button{
                 width: 150px;
@@ -104,6 +104,41 @@
         }
     }
 
+}
+
+@media(min-width:900px){
+    #contact{
+        >#contactBaner >h3{
+            padding:2vh;
+            font-size: 4rem;
+        }
+
+        >#contactOptions{
+            flex-direction: row;
+            height: 500px;
+            width:100%;
+
+
+            >div{
+                width: 400px;
+                height: 400px;
+                z-index:10;
+                >p{
+                    padding:5%;
+                }
+            }
+
+            >div:first-child{
+                top:-10%;
+                left:50%;
+            }
+
+            >div:last-child{
+                top:-10%;
+                right:50%;
+            }
+        }
+    }
 }
 
 
@@ -137,6 +172,27 @@
             >div:last-child{
                 top:-10%;
                 right:50%;
+            }
+        }
+    }
+}
+
+@media (orientation: portrait){
+    #contact{
+        >#contactOptions {
+
+            height: 100vh;
+
+            >div{
+                height: 400px;
+            }
+            >div:first-child{
+                top:-20%;
+
+            }
+
+            >div:last-child{
+                top:35vh;
             }
         }
     }

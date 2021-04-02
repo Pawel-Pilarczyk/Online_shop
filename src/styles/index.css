@@ -392,16 +392,45 @@
       #productsDisplay > .productItem > a > img:hover {
         border: 5px solid rgba(75, 75, 75, 0.719); }
 
+#filterForm {
+  width: 40%;
+  padding-top: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center; }
+  #filterForm > label {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  #filterForm > button {
+    width: 150px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(75, 75, 75, 0.719);
+    border: 2px solid rgba(11, 11, 11, 0.719);
+    color: white;
+    font-size: 1.2rem; }
+    #filterForm > button:hover {
+      background-color: rgba(139, 139, 139, 0.719); }
+    #filterForm > button:disabled {
+      color: rgba(75, 75, 75, 0.719); }
+
 @media (max-width: 1200px) {
   #productsDisplay {
     width: 80%;
     grid-template-columns: 1fr 1fr; } }
 @media (max-width: 900px) {
   #productsDisplay {
-    width: 100%; } }
+    width: 100%; }
+
+  #filterForm {
+    width: 70%; } }
 @media (max-width: 600px) {
   #productsDisplay {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+
+  #filterForm {
+    width: 100%; } }
 #cart {
   width: 100%;
   padding: 20vh 0vh;
@@ -454,14 +483,14 @@
       height: 100%; }
     #contact > #contactBaner > h3 {
       color: white;
-      padding: 20%;
+      padding: 10%;
       font-size: 2rem;
       z-index: 2; }
   #contact > #contactOptions {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: 150vh;
     width: 100%; }
     #contact > #contactOptions > div {
       width: 90%;
@@ -486,7 +515,7 @@
     #contact > #contactOptions > div:first-child {
       top: -10%; }
     #contact > #contactOptions > div:last-child {
-      top: 35vh; }
+      top: 55vh; }
       #contact > #contactOptions > div:last-child > button {
         width: 150px;
         height: 50px;
@@ -519,6 +548,35 @@
     #contact > #contactOptions > div:last-child {
       top: -10%;
       right: 50%; } }
+@media (min-width: 900px) {
+  #contact > #contactBaner > h3 {
+    padding: 2vh;
+    font-size: 4rem; }
+  #contact > #contactOptions {
+    flex-direction: row;
+    height: 500px;
+    width: 100%; }
+    #contact > #contactOptions > div {
+      width: 400px;
+      height: 400px;
+      z-index: 10; }
+      #contact > #contactOptions > div > p {
+        padding: 5%; }
+    #contact > #contactOptions > div:first-child {
+      top: -10%;
+      left: 50%; }
+    #contact > #contactOptions > div:last-child {
+      top: -10%;
+      right: 50%; } }
+@media (orientation: portrait) {
+  #contact > #contactOptions {
+    height: 100vh; }
+    #contact > #contactOptions > div {
+      height: 400px; }
+    #contact > #contactOptions > div:first-child {
+      top: -20%; }
+    #contact > #contactOptions > div:last-child {
+      top: 35vh; } }
 #controlPanel {
   margin: 0 auto;
   width: 100vw;

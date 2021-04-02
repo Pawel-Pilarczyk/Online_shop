@@ -1,13 +1,13 @@
 <template>
     <div >
-        <form action="" id="filterForm">
+        <form id="filterForm">
             <label for="filterOption"> Filter:</label>
-            <select name="filterOption" id="filterOption" v-model="filterOption">
+            <select name="filterOption" id="filterOption" v-model="productFilterOption">
                 <option value="specialPrice">Special Price</option>
                 <option value="recommended">Recommended</option>
             </select>
-            <button @click="filterProducts(filterOption)" :disabled="filterOption === ''">filter</button>
-            <button @click="resetFilter">Reset Filter</button>
+            <button @click.prevent="filterProducts(productFilterOption)" :disabled="productFilterOption === ''">Filter</button>
+            <button @click.prevent="resetFilter">Reset Filter</button>
         </form>
 
         <div id="productsDisplay">
@@ -29,7 +29,7 @@ import Product from './Product.vue'
         data() {
             return {
                products: this.$store.state.products,
-               filterOption :'',
+               productFilterOption :'',
             }
         },
         methods:{
