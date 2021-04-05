@@ -19,10 +19,37 @@
             width:50%
         }
 
-        >input{
-            width:50%,
+        input,
+        textarea{
+            width:50%;
+            min-width:50%;
+            max-width: 50%;
+
+        }
+
+        >a {
+            width: 50%;
+            input[type=button]{
+                height: 10vh;
+            }
         }
 
 
+    }
+}
+
+@media(min-width:800px){
+    #productEdit{
+        margin: 0 auto;
+        width:80%;
+        >h1{
+            padding:10vh;
+        }
+    }
+}
+
+@media(min-width:1024px){
+    #productEdit{
+        width:60%;
     }
 }

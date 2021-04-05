@@ -264,6 +264,10 @@
   #displayItem {
     display: flex;
     flex-direction: column; }
+    #displayItem img {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
     #displayItem > p {
       padding-bottom: 10vh; }
 
@@ -646,9 +650,25 @@
     margin: 5vh auto; }
     #productEdit section > label {
       width: 50%; }
-    #productEdit section > input {
+    #productEdit section input,
+    #productEdit section textarea {
+      width: 50%;
+      min-width: 50%;
+      max-width: 50%; }
+    #productEdit section > a {
       width: 50%; }
+      #productEdit section > a input[type=button] {
+        height: 10vh; }
 
+@media (min-width: 800px) {
+  #productEdit {
+    margin: 0 auto;
+    width: 80%; }
+    #productEdit > h1 {
+      padding: 10vh; } }
+@media (min-width: 1024px) {
+  #productEdit {
+    width: 60%; } }
 * {
   margin: 0px;
   padding: 0px;

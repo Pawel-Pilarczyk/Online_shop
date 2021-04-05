@@ -3,6 +3,9 @@
 
     <template v-if="!loggedIn" >
 
+        <h2>Login: admin</h2>
+        <h2>password: admin</h2>
+
         <form id='loginForm'>
             <h1>Log In</h1>
             <label for="login">Login</label>
@@ -25,7 +28,7 @@
 
                 <tr v-for="product in products" :key='product.index'>
                     <td>{{product.name}}</td>
-                    <td><router-link :to="{ name: 'productEdit', params: { id: product.index }}"><button>EDIT</button></router-link></td>
+                    <td><router-link :to="{ name: 'productEdit', params: { id: $store.state.products.indexOf(product) }}"><button>EDIT</button></router-link></td>
 
                 </tr>
 
@@ -48,7 +51,6 @@
                 adminData :{login:'admin',password:'admin'},
                 login:'',
                 password:'',
-                products: this.$store.state.products,
                 loggedIn: false,
 
             }
@@ -60,12 +62,14 @@
                     this.loggedIn = true;
                     this.login="";
                     this.password ="";
-                    alert('good')
                 }else{
                     this.login="";
                     this.password ="";
                 }
             }
+        },
+        computed:{
+            products(){return this.$store.state.products },
         }
     }
 </script>
