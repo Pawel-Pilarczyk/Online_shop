@@ -1,0 +1,28 @@
+#productEdit{
+    width:100%;
+    margin-top:10vh;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+
+    >h1{
+        padding:5%;
+    }
+
+    section{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+        margin:5vh auto;
+
+        >label{
+            width:50%
+        }
+
+        >input{
+            width:50%,
+        }
+
+
+    }
+}

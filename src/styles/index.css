@@ -631,6 +631,24 @@
 @media (min-width: 1024px) {
   #controlPanel {
     width: 40vw; } }
+#productEdit {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  #productEdit > h1 {
+    padding: 5%; }
+  #productEdit section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh auto; }
+    #productEdit section > label {
+      width: 50%; }
+    #productEdit section > input {
+      width: 50%; }
+
 * {
   margin: 0px;
   padding: 0px;
