@@ -5,6 +5,19 @@ import {products} from './data/products'
 
 Vue.use(Vuex);
 
+const newProduct = (index) => {
+    this.index = index;
+    this.name= '';
+    this.stock = 0;
+    this.price = 0;
+    this.mainPicUrl = '';
+    this.dimentions ='aa x bb x cc';
+    this.description ='';
+    this.inStock = false;
+    this.recommended = false;
+    this.specialPrice = false;
+};
+
 export default new Vuex.Store({
     state:{
         cart :[],
@@ -20,7 +33,7 @@ export default new Vuex.Store({
         },
         addToTheProducts(state,payload){
             state.products.push(
-                new newProduct(payload.newProduct)
+                new newProduct(newProduct(payload.index))
             )
         },
 

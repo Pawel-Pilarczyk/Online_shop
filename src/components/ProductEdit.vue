@@ -13,6 +13,11 @@
             </section>
 
             <section>
+                <label for="mainPicUrl">Product Picture:</label>
+                <input type="text" name="mainPicUrl" v-model="product.mainPicUrl" :placeholder="product.mainPicUrl">
+            </section>
+
+            <section>
                 <label for="productPrice">Product Price:</label>
                 <input type="number" name="productPrice" v-model="product.price" :placeholder="product.price">
             </section>

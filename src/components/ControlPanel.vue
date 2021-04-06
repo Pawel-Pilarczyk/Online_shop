@@ -34,7 +34,7 @@
 
             </table>
 
-            <button>Add new Product</button>
+            <button @click="addNewProduct">Add new Product</button>
         </div>
      </template>
 
@@ -66,6 +66,9 @@
                     this.login="";
                     this.password ="";
                 }
+            },
+            addNewProduct(){
+                this.$store.commit('addToTheProducts',this.$store.state.products.length)
             }
         },
         computed:{
